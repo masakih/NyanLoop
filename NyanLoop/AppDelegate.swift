@@ -12,7 +12,6 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    
     class func shared() -> AppDelegate {
         return NSApplication.shared().delegate as! AppDelegate
     }
@@ -28,26 +27,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let size = NSApplication.shared().dockTile.size
         docTile.view.setFrameSize(size)
         
-        NSApplication.shared().dockTile.display()
+        updateDockTile()
     }
 
     func changeFace() {
         
         docTile.textField.stringValue = "😻"
-        NSApplication.shared().dockTile.display()
+        updateDockTile()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
             
             guard let `self` = self else { return }
             
             self.docTile.textField.stringValue = "😺"
-            NSApplication.shared().dockTile.display()
+            self.updateDockTile()
         }
+    }
+    
+    private func updateDockTile() {
+        NSApplication.shared().dockTile.display()
     }
     
     var touchbar = TouchBar()
 }
-
 
 @available(OSX 10.12.2, *)
 extension AppDelegate: NSTouchBarProvider {
@@ -57,4 +59,3 @@ extension AppDelegate: NSTouchBarProvider {
         set {}
     }
 }
-
