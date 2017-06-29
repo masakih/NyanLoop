@@ -42,13 +42,12 @@ class TouchBar: NSViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     override var touchBar: NSTouchBar? {
         get { return nyanBar }
         set {}
     }
     
-    func doNyan() {
+    private func doNyan() {
         
         guard let newNyan = NSKeyedUnarchiver.unarchiveObject(with: archive) as? NSTextField
             else { return print("could not unarchive Nyan.") }
@@ -68,6 +67,7 @@ class TouchBar: NSViewController {
             newNyan.animator().frame = frame
             
         }) {
+            
             newNyan.removeFromSuperview()
         }
         
