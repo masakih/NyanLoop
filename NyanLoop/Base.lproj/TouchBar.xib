@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="12062"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" message="Use a version of macOS with Touch Bar support." minToolsVersion="8.1" minSystemVersion="10.12.1" requiredIntegratedClassName="NSTouchBar"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TouchBar" customModule="NyanLoop" customModuleProvider="target">
+            <connections>
+                <outlet property="nyan" destination="3cy-WL-Cdi" id="Slv-Lm-FhO"/>
+                <outlet property="nyanBar" destination="OFo-pR-NCV" id="LPA-gF-Xp8"/>
+                <outlet property="view" destination="DcQ-FO-Y7b" id="R3A-zB-nTG"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <touchBar id="OFo-pR-NCV">
+            <touchBarItems>
+                <touchBarItem id="bTi-7R-Ix4">
+                    <viewController key="viewController" id="9b7-j5-qyR">
+                        <view key="view" translatesAutoresizingMaskIntoConstraints="NO" id="DcQ-FO-Y7b">
+                            <rect key="frame" x="0.0" y="0.0" width="685" height="30"/>
+                        </view>
+                    </viewController>
+                </touchBarItem>
+            </touchBarItems>
+            <point key="canvasLocation" x="34" y="299"/>
+        </touchBar>
+        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="3cy-WL-Cdi">
+            <rect key="frame" x="0.0" y="0.0" width="25" height="19"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="😺" id="9bP-X7-YxD">
+                <font key="font" metaFont="system" size="15"/>
+                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+            </textFieldCell>
+        </textField>
+    </objects>
+</document>

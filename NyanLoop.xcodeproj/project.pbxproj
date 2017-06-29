@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4E450751F02715B00D09952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E450741F02715B00D09952 /* AppDelegate.swift */; };
+		F4E450791F02715B00D09952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E450781F02715B00D09952 /* Assets.xcassets */; };
+		F4E4507C1F02715B00D09952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E4507A1F02715B00D09952 /* Main.storyboard */; };
+		F4E450871F02715B00D09952 /* NyanLoopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E450861F02715B00D09952 /* NyanLoopTests.swift */; };
+		F4E450921F02715B00D09952 /* NyanLoopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E450911F02715B00D09952 /* NyanLoopUITests.swift */; };
+		F4E450A21F02722800D09952 /* DocTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E450A11F02722800D09952 /* DocTile.swift */; };
+		F4E450A71F027A5800D09952 /* TouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E450A61F027A5800D09952 /* TouchBar.swift */; };
+		F4E450AA1F0515CF00D09952 /* DocTile.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E450AC1F0515CF00D09952 /* DocTile.xib */; };
+		F4E450AD1F0515D400D09952 /* TouchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E450AF1F0515D400D09952 /* TouchBar.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4E450831F02715B00D09952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E450691F02715B00D09952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E450701F02715B00D09952;
+			remoteInfo = NyanLoop;
+		};
+		F4E4508E1F02715B00D09952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E450691F02715B00D09952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E450701F02715B00D09952;
+			remoteInfo = NyanLoop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4E450711F02715B00D09952 /* NyanLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NyanLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E450741F02715B00D09952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4E450781F02715B00D09952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4E4507B1F02715B00D09952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4E4507D1F02715B00D09952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E450821F02715B00D09952 /* NyanLoopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NyanLoopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E450861F02715B00D09952 /* NyanLoopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyanLoopTests.swift; sourceTree = "<group>"; };
+		F4E450881F02715B00D09952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E4508D1F02715B00D09952 /* NyanLoopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NyanLoopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E450911F02715B00D09952 /* NyanLoopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyanLoopUITests.swift; sourceTree = "<group>"; };
+		F4E450931F02715B00D09952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E450A11F02722800D09952 /* DocTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocTile.swift; sourceTree = "<group>"; };
+		F4E450A61F027A5800D09952 /* TouchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBar.swift; sourceTree = "<group>"; };
+		F4E450AB1F0515CF00D09952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DocTile.xib; sourceTree = "<group>"; };
+		F4E450AE1F0515D400D09952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TouchBar.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4E4506E1F02715B00D09952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E4507F1F02715B00D09952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E4508A1F02715B00D09952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4E450681F02715B00D09952 = {
+			isa = PBXGroup;
+			children = (
+				F4E450731F02715B00D09952 /* NyanLoop */,
+				F4E450851F02715B00D09952 /* NyanLoopTests */,
+				F4E450901F02715B00D09952 /* NyanLoopUITests */,
+				F4E450721F02715B00D09952 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4E450721F02715B00D09952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4E450711F02715B00D09952 /* NyanLoop.app */,
+				F4E450821F02715B00D09952 /* NyanLoopTests.xctest */,
+				F4E4508D1F02715B00D09952 /* NyanLoopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4E450731F02715B00D09952 /* NyanLoop */ = {
+			isa = PBXGroup;
+			children = (
+				F4E450741F02715B00D09952 /* AppDelegate.swift */,
+				F4E450A61F027A5800D09952 /* TouchBar.swift */,
+				F4E450AF1F0515D400D09952 /* TouchBar.xib */,
+				F4E450A11F02722800D09952 /* DocTile.swift */,
+				F4E450AC1F0515CF00D09952 /* DocTile.xib */,
+				F4E450781F02715B00D09952 /* Assets.xcassets */,
+				F4E4507A1F02715B00D09952 /* Main.storyboard */,
+				F4E4507D1F02715B00D09952 /* Info.plist */,
+			);
+			path = NyanLoop;
+			sourceTree = "<group>";
+		};
+		F4E450851F02715B00D09952 /* NyanLoopTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4E450861F02715B00D09952 /* NyanLoopTests.swift */,
+				F4E450881F02715B00D09952 /* Info.plist */,
+			);
+			path = NyanLoopTests;
+			sourceTree = "<group>";
+		};
+		F4E450901F02715B00D09952 /* NyanLoopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4E450911F02715B00D09952 /* NyanLoopUITests.swift */,
+				F4E450931F02715B00D09952 /* Info.plist */,
+			);
+			path = NyanLoopUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4E450701F02715B00D09952 /* NyanLoop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4E450961F02715B00D09952 /* Build configuration list for PBXNativeTarget "NyanLoop" */;
+			buildPhases = (
+				F4E4506D1F02715B00D09952 /* Sources */,
+				F4E4506E1F02715B00D09952 /* Frameworks */,
+				F4E4506F1F02715B00D09952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NyanLoop;
+			productName = NyanLoop;
+			productReference = F4E450711F02715B00D09952 /* NyanLoop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4E450811F02715B00D09952 /* NyanLoopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4E450991F02715B00D09952 /* Build configuration list for PBXNativeTarget "NyanLoopTests" */;
+			buildPhases = (
+				F4E4507E1F02715B00D09952 /* Sources */,
+				F4E4507F1F02715B00D09952 /* Frameworks */,
+				F4E450801F02715B00D09952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4E450841F02715B00D09952 /* PBXTargetDependency */,
+			);
+			name = NyanLoopTests;
+			productName = NyanLoopTests;
+			productReference = F4E450821F02715B00D09952 /* NyanLoopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4E4508C1F02715B00D09952 /* NyanLoopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4E4509C1F02715B00D09952 /* Build configuration list for PBXNativeTarget "NyanLoopUITests" */;
+			buildPhases = (
+				F4E450891F02715B00D09952 /* Sources */,
+				F4E4508A1F02715B00D09952 /* Frameworks */,
+				F4E4508B1F02715B00D09952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4E4508F1F02715B00D09952 /* PBXTargetDependency */,
+			);
+			name = NyanLoopUITests;
+			productName = NyanLoopUITests;
+			productReference = F4E4508D1F02715B00D09952 /* NyanLoopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4E450691F02715B00D09952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hori,Masaki";
+				TargetAttributes = {
+					F4E450701F02715B00D09952 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					F4E450811F02715B00D09952 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4E450701F02715B00D09952;
+					};
+					F4E4508C1F02715B00D09952 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4E450701F02715B00D09952;
+					};
+				};
+			};
+			buildConfigurationList = F4E4506C1F02715B00D09952 /* Build configuration list for PBXProject "NyanLoop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4E450681F02715B00D09952;
+			productRefGroup = F4E450721F02715B00D09952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4E450701F02715B00D09952 /* NyanLoop */,
+				F4E450811F02715B00D09952 /* NyanLoopTests */,
+				F4E4508C1F02715B00D09952 /* NyanLoopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4E4506F1F02715B00D09952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E450791F02715B00D09952 /* Assets.xcassets in Resources */,
+				F4E450AD1F0515D400D09952 /* TouchBar.xib in Resources */,
+				F4E450AA1F0515CF00D09952 /* DocTile.xib in Resources */,
+				F4E4507C1F02715B00D09952 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E450801F02715B00D09952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E4508B1F02715B00D09952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4E4506D1F02715B00D09952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E450A71F027A5800D09952 /* TouchBar.swift in Sources */,
+				F4E450751F02715B00D09952 /* AppDelegate.swift in Sources */,
+				F4E450A21F02722800D09952 /* DocTile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E4507E1F02715B00D09952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E450871F02715B00D09952 /* NyanLoopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E450891F02715B00D09952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E450921F02715B00D09952 /* NyanLoopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4E450841F02715B00D09952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4E450701F02715B00D09952 /* NyanLoop */;
+			targetProxy = F4E450831F02715B00D09952 /* PBXContainerItemProxy */;
+		};
+		F4E4508F1F02715B00D09952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4E450701F02715B00D09952 /* NyanLoop */;
+			targetProxy = F4E4508E1F02715B00D09952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4E4507A1F02715B00D09952 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4E4507B1F02715B00D09952 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4E450AC1F0515CF00D09952 /* DocTile.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4E450AB1F0515CF00D09952 /* Base */,
+			);
+			name = DocTile.xib;
+			sourceTree = "<group>";
+		};
+		F4E450AF1F0515D400D09952 /* TouchBar.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4E450AE1F0515D400D09952 /* Base */,
+			);
+			name = TouchBar.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4E450941F02715B00D09952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4E450951F02715B00D09952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		F4E450971F02715B00D09952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NyanLoop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.NyanLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F4E450981F02715B00D09952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NyanLoop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.NyanLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F4E4509A1F02715B00D09952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NyanLoopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.NyanLoopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NyanLoop.app/Contents/MacOS/NyanLoop";
+			};
+			name = Debug;
+		};
+		F4E4509B1F02715B00D09952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NyanLoopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.NyanLoopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NyanLoop.app/Contents/MacOS/NyanLoop";
+			};
+			name = Release;
+		};
+		F4E4509D1F02715B00D09952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NyanLoopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.NyanLoopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NyanLoop;
+			};
+			name = Debug;
+		};
+		F4E4509E1F02715B00D09952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NyanLoopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.NyanLoopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NyanLoop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4E4506C1F02715B00D09952 /* Build configuration list for PBXProject "NyanLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E450941F02715B00D09952 /* Debug */,
+				F4E450951F02715B00D09952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4E450961F02715B00D09952 /* Build configuration list for PBXNativeTarget "NyanLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E450971F02715B00D09952 /* Debug */,
+				F4E450981F02715B00D09952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F4E450991F02715B00D09952 /* Build configuration list for PBXNativeTarget "NyanLoopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E4509A1F02715B00D09952 /* Debug */,
+				F4E4509B1F02715B00D09952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F4E4509C1F02715B00D09952 /* Build configuration list for PBXNativeTarget "NyanLoopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E4509D1F02715B00D09952 /* Debug */,
+				F4E4509E1F02715B00D09952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4E450691F02715B00D09952 /* Project object */;
+}
