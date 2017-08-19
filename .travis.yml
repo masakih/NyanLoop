@@ -1,0 +1,15 @@
+# ref. http://docs.travis-ci.com/user/languages/objective-c/
+
+language: objective-c
+osx_image: xcode8.3
+
+before_install:
+  - gem install xcpretty-travis-formatter
+
+script:
+  set -o pipefail &&
+  xcodebuild clean build
+  -workspace NyanLoo.xcworkspace
+  -scheme NyanLoop
+  | xcpretty -f `xcpretty-travis-formatter`
+
