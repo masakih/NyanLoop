@@ -9,7 +9,6 @@ before_install:
 script:
   set -o pipefail &&
   xcodebuild clean build
-  -workspace NyanLoo.xcworkspace
-  -scheme NyanLoop
+  -configuration Release
   | xcpretty -f `xcpretty-travis-formatter`
 
