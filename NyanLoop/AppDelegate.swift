@@ -12,9 +12,9 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    class func shared() -> AppDelegate {
+    static let shared: AppDelegate = {
         return NSApplication.shared.delegate as! AppDelegate
-    }
+    }()
     
     var docTile: DocTile!
 

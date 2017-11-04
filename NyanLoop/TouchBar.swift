@@ -75,6 +75,6 @@ class TouchBar: NSViewController {
     
     override func touchesBegan(with event: NSEvent) {
         
-        AppDelegate.shared().changeFace()
+        AppDelegate.shared.changeFace()
     }
 }
