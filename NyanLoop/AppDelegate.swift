@@ -13,7 +13,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     class func shared() -> AppDelegate {
-        return NSApplication.shared().delegate as! AppDelegate
+        return NSApplication.shared.delegate as! AppDelegate
     }
     
     var docTile: DocTile!
@@ -22,9 +22,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         docTile = DocTile()
         
-        NSApplication.shared().dockTile.contentView = docTile.view
+        NSApplication.shared.dockTile.contentView = docTile.view
         
-        let size = NSApplication.shared().dockTile.size
+        let size = NSApplication.shared.dockTile.size
         docTile.view.setFrameSize(size)
         
         updateDockTile()
@@ -45,7 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     private func updateDockTile() {
-        NSApplication.shared().dockTile.display()
+        NSApplication.shared.dockTile.display()
     }
     
     var touchbar = TouchBar()

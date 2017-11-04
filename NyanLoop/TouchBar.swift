@@ -17,12 +17,12 @@ class TouchBar: NSViewController {
     
     var archive: Data!
     
-    override init?(nibName: String?, bundle: Bundle?) {
+    override init(nibName: NSNib.Name?, bundle: Bundle?) {
         
         super.init(nibName: nil, bundle: nil)
         
-        var topLevel: NSArray = []
-        Bundle.main.loadNibNamed("TouchBar", owner: self, topLevelObjects: &topLevel)
+        var topLevel: NSArray?
+        Bundle.main.loadNibNamed(NSNib.Name("TouchBar"), owner: self, topLevelObjects: &topLevel)
         
         archive = NSKeyedArchiver.archivedData(withRootObject: nyan)
         guard let _ = archive else { fatalError("could not archive Nyan.") }
