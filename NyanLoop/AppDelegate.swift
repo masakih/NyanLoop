@@ -37,10 +37,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
             
-            guard let `self` = self else { return }
-            
-            self.docTile.textField.stringValue = "😺"
-            self.updateDockTile()
+            self?.docTile.textField.stringValue = "😺"
+            self?.updateDockTile()
         }
     }
     
